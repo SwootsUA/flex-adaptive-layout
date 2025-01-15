@@ -67,10 +67,15 @@ a, a:hover, a:active, a:visited {
     text-decoration: none;
 }
 
-.a-button, .a-button:hover, .a-button:active, .a-button:visited {
+.a-button, .a-button:visited {
     background-color: #333;
     border: 1px solid #666;
     padding: 16px 32px;
+}
+
+.a-button:hover, .a-button:active {
+    background-color: #eaeaea;
+    color: #333;
 }
 
 /* background darkener */
@@ -154,7 +159,7 @@ header::after {
     background-color: #2690d4;
 }
 
-footer {
+.footer-section {
     display: flex;
     justify-content: space-around;
     padding: 35px 0;
@@ -164,4 +169,24 @@ footer {
 
 .media-link, .media-link:visited {
     color: #2690d4;
+}
+
+@media screen and (max-width: 700px) {
+    .columns-wrapper p {
+        column-count: 1;
+    }
+
+    .section-d, .section-b ul, .footer-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-b li {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .box {
+        width: 100%;
+    }
 }

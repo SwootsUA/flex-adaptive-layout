@@ -52,9 +52,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 450px;
+    min-height: inherit;
     max-width: 900px;
-    padding: 100px 20px 150px;
+    padding: 50px 20px 100px;
     margin: 0 auto;
 }
 
@@ -126,7 +126,6 @@ header::after {
 
 .section-b img {
     width: 100%;
-    object-fit: cover;
 }
 
 .card-content {
